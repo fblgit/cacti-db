@@ -5,4 +5,4 @@ MAINTAINER FBLGIT
 VOLUME /var/lib/mysql
 COPY files/ubuntu-cacti-db.sh /data/ubuntu-cacti-db.sh
 RUN chmod +x /data/ubuntu-cacti-db.sh
-CMD ["/data/ubuntu-cacti-db.sh"]
+ONBUILD CMD ["/data/ubuntu-cacti-db.sh"]
